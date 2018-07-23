@@ -1,0 +1,12 @@
+<div class="Tooltip">
+    <button (click)="toggleTooltip()"
+            #toggle
+            class="Tooltip__toggle">
+        Tooltip 토글
+    </button>
+
+    <div [class.Tooltip__message--show]="showTooltip"
+         class="Tooltip__message">
+        {{ message }}
+    </div>
+</div>

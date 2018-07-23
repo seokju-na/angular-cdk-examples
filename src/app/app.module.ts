@@ -7,6 +7,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DialogComponent } from './dialog/dialog.component';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { DialogComponent } from './dialog/dialog.component';
     declarations: [
         AppComponent,
         DialogComponent,
+        TooltipComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

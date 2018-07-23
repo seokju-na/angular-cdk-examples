@@ -1,0 +1,36 @@
+.Tooltip {
+    position: relative;
+
+    &__toggle {
+        display: inline-block;
+        width: 100px;
+        height: 36px;
+        border-radius: 3.5px;
+        background-color: #f8f9fa;
+        border: 1px solid #adb5bd;
+        outline: 0;
+        font-size: 14px;
+        cursor: pointer;
+
+        &:focus {
+            outline: 0;
+            box-shadow: 0 0 5px 3px #1c7ed6;
+        }
+    }
+
+    &__message {
+        display: none;
+        padding: 6px 10px;
+        background-color: #343a40;
+        border-radius: 3.5px;
+        color: #fff;
+
+        position: absolute;
+        left: 0;
+        top: 44px;
+
+        &--show {
+            display: block;
+        }
+    }
+}

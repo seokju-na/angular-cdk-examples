@@ -48,9 +48,7 @@
                         "styles": [
                             "src/styles.scss"
                         ],
-                        "scripts": [],
-                        "deployUrl": "https://seokju-na.github.io/angular-cdk-examples/",
-                        "baseHref": "/angular-cdk-examples/"
+                        "scripts": []
                     },
                     "configurations": {
                         "production": {
@@ -68,7 +66,9 @@
                             "aot": true,
                             "extractLicenses": true,
                             "vendorChunk": false,
-                            "buildOptimizer": true
+                            "buildOptimizer": true,
+                            "deployUrl": "https://seokju-na.github.io/angular-cdk-examples/",
+                            "baseHref": "/angular-cdk-examples/"
                         }
                     }
                 },

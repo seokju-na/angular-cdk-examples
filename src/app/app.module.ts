@@ -7,8 +7,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DialogComponent } from './dialog/dialog.component';
-import { MenuWithKeyManagerComponent } from './menu-with-key-manager/menu-with-key-manager.component';
-import { TooltipWithFocusMonitorComponent } from './tooltip-with-focus-monitor/tooltip-with-focus-monitor.component';
 
 
 @NgModule({
@@ -23,8 +21,6 @@ import { TooltipWithFocusMonitorComponent } from './tooltip-with-focus-monitor/t
     declarations: [
         AppComponent,
         DialogComponent,
-        MenuWithKeyManagerComponent,
-        TooltipWithFocusMonitorComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

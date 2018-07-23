@@ -50,7 +50,7 @@
                         ],
                         "scripts": [],
                         "deployUrl": "https://seokju-na.github.io/angular-cdk-examples/",
-                        "baseHref": "angular-cdk-examples/"
+                        "baseHref": "/angular-cdk-examples/"
                     },
                     "configurations": {
                         "production": {

@@ -1,0 +1,59 @@
+<button (click)="openModal()">모달 열기</button>
+
+
+<fieldset>
+    <input id="enable-focus-trap-checkbox"
+           type="checkbox"
+           [(ngModel)]="enableFocusTrap">
+    <label for="enable-focus-trap-checkbox">FocusTrap 활성화</label>
+</fieldset>
+<fieldset>
+    <input id="enable-auto-focus"
+           type="checkbox"
+           [disabled]="!enableFocusTrap"
+           [(ngModel)]="enableAutoFocusToConfirmButton">
+    <label for="enable-auto-focus">모달이 열리면 '확인' 버튼으로 AutoFocus</label>
+</fieldset>
+<fieldset>
+    <input id="enable-saving-previously-focused-elem-checkbox"
+           type="checkbox"
+           [(ngModel)]="enableSavingPreviouslyFocusedElement">
+    <label for="enable-saving-previously-focused-elem-checkbox">
+        모달이 닫히면 이전 포커스로 이동하기
+    </label>
+</fieldset>
+
+
+<div #modalContainer
+     [class.ModalContainer--show]="showModal"
+     class="ModalContainer">
+
+    <div class="ModalContainer__backdrop"></div>
+
+    <div role="dialog"
+         aria-labelledby="modal-title"
+         aria-describedby="modal-content"
+         class="Modal">
+
+        <header>
+            <h1 id="modal-title">모달 이름</h1>
+            <button id="modal-close-button"
+                    (click)="closeModal()"
+                    aria-label="모달 닫기">
+                <i class="la la-times"></i>
+            </button>
+        </header>
+
+        <p id="modal-content">
+            예제 모달입니다.
+        </p>
+
+        <div class="Modal__actions">
+            <button id="modal-confirm-button"
+                    (click)="closeModal()"
+                    cdkFocusInitial>확인</button>
+            <button id="modal-cancel-button"
+                    (click)="closeModal()">취소</button>
+        </div>
+    </div>
+</div>

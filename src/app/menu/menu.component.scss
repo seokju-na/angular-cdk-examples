@@ -1,0 +1,37 @@
+sj-menu {
+    display: block;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+
+    input[type=checkbox] {
+        display: inline-block;
+        margin-right: 6px;
+
+        &:focus {
+            outline: 0;
+            box-shadow: 0 0 5px 3px #1c7ed6;
+            border-radius: 25%;
+        }
+    }
+}
+
+.Menu {
+    padding: 20px;
+
+    &__list {
+        border: 1px solid #ced4da;
+
+        .MenuItem {
+            border-bottom: 1px solid #ced4da;
+        }
+
+        &:focus {
+            outline: 0;
+            box-shadow: 0 0 5px 3px #1c7ed6;
+        }
+    }
+}

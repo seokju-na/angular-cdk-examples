@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DialogComponent } from './dialog/dialog.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
+import { MenuComponent } from './menu/menu.component';
+import { MenuItemComponent } from './menu-item/menu-item.component';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import { TooltipComponent } from './tooltip/tooltip.component';
         AppComponent,
         DialogComponent,
         TooltipComponent,
+        MenuComponent,
+        MenuItemComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

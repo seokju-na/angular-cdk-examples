@@ -1,0 +1,26 @@
+<div role="menu" class="Menu">
+    <fieldset>
+        <input type="checkbox"
+               [(ngModel)]="enableWrapping"
+               (change)="updateKeyManager()"
+               id="enable-wrapping-checkbox">
+        <label for="enable-wrapping-checkbox">Wrapping 활성화</label>
+    </fieldset>
+
+    <fieldset>
+        <input type="checkbox"
+               [(ngModel)]="useFocusKeyManager"
+               (change)="updateKeyManager()"
+               id="use-focus-key-manager-checkbox">
+        <label for="use-focus-key-manager-checkbox">FocusKeyManager 사용하기</label>
+    </fieldset>
+
+    <div tabindex="0" class="Menu__list">
+        <sj-menu-item *ngFor="let item of items; let i = index"
+                      [item]="item"
+                      [active]="isActiveItem(i)"
+                      [focusable]="useFocusKeyManager"
+                      (click)="activate(i)"
+                      role="menuitem"></sj-menu-item>
+    </div>
+</div>

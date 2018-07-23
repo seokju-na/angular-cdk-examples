@@ -1,27 +1,27 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DialogComponent } from './dialog/dialog.component';
 import { MenuWithKeyManagerComponent } from './menu-with-key-manager/menu-with-key-manager.component';
-import { ModalWithFocusTrapComponent } from './modal-with-focus-trap/modal-with-focus-trap.component';
-import { TooltipWithFocusMonitorDirective } from './tooltip-with-focus-monitor/tooltip-with-focus-monitor.directive';
-import { WelcomeComponent } from './welcome/welcome.component';
+import { TooltipWithFocusMonitorComponent } from './tooltip-with-focus-monitor/tooltip-with-focus-monitor.component';
 
 
 export const APP_ROUTES: Routes = [
     {
-        path: '',
-        component: WelcomeComponent,
-    },
-    {
-        path: 'modal-with-focus-trap',
-        component: ModalWithFocusTrapComponent,
+        path: 'dialog',
+        component: DialogComponent,
     },
     {
         path: 'tooltip-with-focus-monitor',
-        component: TooltipWithFocusMonitorDirective,
+        component: TooltipWithFocusMonitorComponent,
     },
     {
         path: 'menu-with-key-manager',
         component: MenuWithKeyManagerComponent,
+    },
+    {
+        path: '',
+        redirectTo: '/dialog',
+        pathMatch: 'full',
     },
 ];
 

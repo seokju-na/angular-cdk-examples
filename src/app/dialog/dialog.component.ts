@@ -3,11 +3,11 @@ import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/co
 
 
 @Component({
-    selector: 'sj-modal-with-focus-trap',
-    templateUrl: './modal-with-focus-trap.component.html',
-    styleUrls: ['./modal-with-focus-trap.component.scss'],
+    selector: 'sj-dialog',
+    templateUrl: './dialog.component.html',
+    styleUrls: ['./dialog.component.scss'],
 })
-export class ModalWithFocusTrapComponent implements OnInit, OnDestroy {
+export class DialogComponent implements OnInit, OnDestroy {
     enableFocusTrap = false;
     enableSavingPreviouslyFocusedElement = false;
     enableAutoFocusToConfirmButton = false;

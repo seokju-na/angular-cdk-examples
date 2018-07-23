@@ -1,6 +1,3 @@
-<button (click)="openModal()">모달 열기</button>
-
-
 <fieldset>
     <input id="enable-focus-trap-checkbox"
            type="checkbox"
@@ -18,10 +15,11 @@
     <input id="enable-saving-previously-focused-elem-checkbox"
            type="checkbox"
            [(ngModel)]="enableSavingPreviouslyFocusedElement">
-    <label for="enable-saving-previously-focused-elem-checkbox">
-        모달이 닫히면 이전 포커스로 이동하기
-    </label>
+    <label for="enable-saving-previously-focused-elem-checkbox">모달이 닫히면 이전 포커스로 이동하기</label>
 </fieldset>
+
+
+<button id="open-modal-button" (click)="openModal()">모달 열기</button>
 
 
 <div #modalContainer
